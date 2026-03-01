@@ -1,0 +1,136 @@
+<html>
+<head>
+<title>Power Scan</title>
+
+<style>
+body {
+    margin:0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(-45deg,#1e3c72,#2a5298,#0f2027,#203a43);
+    background-size: 400% 400%;
+    animation: gradientMove 12s ease infinite, fadeIn 1s ease-in-out;
+    color:white;
+    padding: 40px;
+    min-height: 100vh;
+}
+
+@keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+fieldset {
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid cyan;
+    background: rgba(0,0,0,0.6);
+}
+
+
+
+
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    background:linear-gradient(45deg,#ff512f,#dd2476);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+questions-container{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    gap:25px;
+    margin-top:40px;
+}
+
+.card{
+    background: rgba(0,0,0,0.6);
+    padding:20px;
+    width:220px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,255,255,0.5);
+    border:2px solid cyan;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1><center>🧬 Personality Scan</center></h1>
+
+
+
+<fieldset>
+<legend>1. How do you solve problems?</legend>
+<input type="radio" name="q1"> Instantly attack ⚡<br>
+<input type="radio" name="q1"> Think deeply 🧠<br>
+<input type="radio" name="q1"> Stay calm 🌿<br>
+<input type="radio" name="q1"> observe silently 🔥<br>
+</fieldset>
+
+<fieldset>
+<legend>2. What drives you?</legend>
+<input type="radio" name="q2"> Power<br>
+<input type="radio" name="q2"> Knowledge<br>
+<input type="radio" name="q2"> logic<br>
+<input type="radio" name="q2"> Leadership<br>
+</fieldset>
+
+<fieldset>
+<legend>3. Choose your ideal environment:</legend>
+<input type="radio" name="q3"> Stormy Sky<br>
+<input type="radio" name="q3"> Silent Library<br>
+<input type="radio" name="q3"> Deep Forest<br>
+<input type="radio" name="q3"> Large Crowd<br>
+</fieldset>
+
+<fieldset>
+<legend>4. Others describe you as:</legend>
+<input type="radio" name="q4"> Bold<br>
+<input type="radio" name="q4"> Intelligent<br>
+<input type="radio" name="q4"> Calm<br>
+<input type="radio" name="q4"> Inspiring<br>
+</fieldset>
+
+<br>
+<center>
+<h2>🔮 Final Decision Question</h2>
+<p>Choose the energy you feel most connected to:</p>
+<br>
+
+
+<a href="storm.html">
+    <button>leadership energy</button>
+</a>
+<br><br>
+
+<a href="nature.html"><button>🌿 Nature Energy</button>
+</a><br><br>
+
+<a href="mind.html"><button>logic energy</button>
+</a><br><br>
+</center>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>Hidden Power Detector</title>
+
+<style>
+body {
+   margin:0;
+    font-family: Arial, sans-serif;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(-45deg,#1e3c72,#2a5298,#0f2027,#203a43);
+    background-size: 400% 400%;
+    animation: gradientMove 12s ease infinite, fadeIn 1s ease-in-out;
+    color:white;
+}
+
+@keyframes gradientmove {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+
+button {
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    background:linear-gradient(45deg,#ff512f,#dd2476);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+   transform: scale(1.1);
+   box-shadow: 0 0 15px #ff2476;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+<h1>⚡ HIDDEN POWER DETECTOR ⚡</h1>
+<h3>Only the worthy can unlock their true power</h3>
+
+<p>Enter your name to begin the scan:</p>
+
+<input type="text" placeholder="Enter Your Name" required>
+<br>
+<br>
+
+<a href="quiz.html">
+<button>Begin Verification</button>
+</a>
+</div>
+
+</body>
+</html>
